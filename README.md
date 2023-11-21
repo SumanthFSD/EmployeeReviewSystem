@@ -80,7 +80,6 @@ Employee Review System is a web application that allows administrators to manage
 
 ## Screenshots
 ![BET2_Register](https://github.com/SumanthFSD/EmployeeReviewSystem/assets/80679363/d5f0ab43-ecbf-4312-b3db-11990ccbdaf0)
-
 ![BET2_Login](https://github.com/SumanthFSD/EmployeeReviewSystem/assets/80679363/ee846fdd-e666-46b9-93bc-b92889367394)
 
 
