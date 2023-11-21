@@ -2,6 +2,11 @@
 
 Employee Review System is a web application that allows administrators to manage employees and performance reviews. Employee can review their peers performance.
 
+![BET2_AdminPage](https://github.com/SumanthFSD/EmployeeReviewSystem/assets/80679363/343ae4b2-93ab-4b92-9b10-cea2e59bac66)
+
+![BET2_userPage](https://github.com/SumanthFSD/EmployeeReviewSystem/assets/80679363/85ef900c-dd68-4a2a-901d-e5ad17c4965e)
+
+
 ## Project Structure
 
 ```
@@ -74,7 +79,9 @@ Employee Review System is a web application that allows administrators to manage
     Your application will be running on `http://localhost:8000` by default.
 
 ## Screenshots
+![BET2_Register](https://github.com/SumanthFSD/EmployeeReviewSystem/assets/80679363/d5f0ab43-ecbf-4312-b3db-11990ccbdaf0)
 
+![BET2_Login](https://github.com/SumanthFSD/EmployeeReviewSystem/assets/80679363/ee846fdd-e666-46b9-93bc-b92889367394)
 
 
 
