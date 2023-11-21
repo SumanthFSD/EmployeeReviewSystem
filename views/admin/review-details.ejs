@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance Review Details</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Performance Review Details</h1>
+  <p>Reviewer: <%= performanceReview.reviewerName %></p>
+  <p>Reviewee: <%= performanceReview.revieweeName %></p>
+  <p><strong>Feedback:</strong> <%= performanceReview.feedback %></p>
+  <div class="nav-buttons">
+    <p><a href="/admin/performance-reviews">Back to Performance Reviews</a></p>
+    <p><a href="/auth/logout">Logout</a></p>
+  </div>
+</body>
+</html>

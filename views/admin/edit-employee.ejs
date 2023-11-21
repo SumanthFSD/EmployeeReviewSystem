@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Employee</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Edit Employee</h1>
+  
+  <!-- Edit Employee Form -->
+  <form method="POST" action="/admin/edit-employee/<%= employee._id %>">
+    <label for="editUsername">Username:</label>
+    <input type="text" id="editUsername" name="editUsername" value="<%= employee.username %>" required>
+    <label for="editPassword">Password:</label>
+    <input type="password" id="editPassword" name="editPassword" required>
+    <label for="editIsAdmin">Admin/NonAdmin:</label>
+    <input type="text" id="editIsAdmin" name="editIsAdmin" required>
+    <button type="submit">Update Employee</button>
+  </form>
+  
+  <div class="nav-buttons">
+    <p><a href="/admin/employees">Back to Employees</a></p>
+    <p><a href="/admin/dashboard">Back to Dashboard</a></p>
+    <p><a href="/auth/logout">Logout</a></p>
+  </div>
+</body>
+</html>

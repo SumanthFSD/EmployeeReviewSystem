@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Performance Reviews</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Manage Performance Reviews</h1>
+  <ul>
+    <% performanceReviews.forEach(review => { %>
+      <li><a href="/employee/view-details/<%= review._id %>"><%= review.feedback %></a></li>
+    <% }); %>
+  </ul>
+  <p><a href="/employee/dashboard">Back to Dashboard</a></p>
+  <p><a href="/auth/logout">Logout</a></p>
+</body>
+</html>

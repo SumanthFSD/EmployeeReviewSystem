@@ -1,0 +1,27 @@
+<!-- views/admin/assign-review.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assign Performance Review</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Assign Performance Review</h1>
+
+  <!-- Assignment Form -->
+  <form method="POST" action="/admin/assign-review/<%= reviewer._id %>">
+    <label for="revieweeId">Assign Employees:</label>
+    <select id="revieweeId" name="revieweeId" multiple>
+      <% employees.forEach(employee => { %>
+        <option value="<%= employee._id %>"><%= employee.username %></option>
+      <% }); %>
+    </select>
+
+    <button type="submit">Assign Review</button>
+  </form>
+
+  <p><a href="/admin/employees">Back to Employees</a></p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Employees</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Employees List</h1>
+  
+  <!-- Display a table of employees -->
+  <table>
+    <tbody>
+      <% employees.forEach(employee => { %>
+        <tr>
+          <td><%= employee.username %></td>
+          <td><a href="/admin/edit-employee/<%= employee._id %>">Edit</a></td>
+          <td><a href="/admin/remove-employee/<%= employee._id %>">Remove</a></td>
+          <td><a href="/admin/assign-review/<%= employee._id %>">Assign Performance Review</a></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+  
+  <!-- Add Employee Form -->
+  <h2>Add Employee</h2>
+  <form method="POST" action="/admin/add-employee">
+    <label for="newUsername">Username:</label>
+    <input type="text" id="newUsername" name="newUsername" required>
+    <label for="newPassword">Password:</label>
+    <input type="password" id="newPassword" name="newPassword" required>
+    <label for="newIsAdmin">Admin/NonAdmin:</label>
+    <input type="text" id="newIsAdmin" name="newIsAdmin" required>
+    <button type="submit">Add Employee</button>
+  </form>
+  
+  <div class="nav-buttons">
+    <p><a href="/admin/dashboard">Back to Dashboard</a></p>
+    <p><a href="/auth/logout">Logout</a></p>
+  </div>
+</body>
+</html>

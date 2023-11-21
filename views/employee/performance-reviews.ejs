@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Performance Reviews</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Employee Performance Reviews</h1>
+  <ul>
+    <% performanceReviews.forEach(review => { %>
+      <li>
+        <%= review.revieweeName %>: <%= review.feedback %>
+        <% if (!review.feedback) { %>
+          <a href="/employee/submit-feedback/<%= review._id %>">Submit feedback for <%= review.revieweeName %></a>
+        <% } %>
+      </li>
+    <% }); %>
+  </ul>
+  <p><a href="/employee/dashboard">Back to Dashboard</a></p>
+  <p><a href="/auth/logout">Logout</a></p>
+</body>
+</html>
