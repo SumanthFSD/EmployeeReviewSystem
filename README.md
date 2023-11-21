@@ -1,45 +1,45 @@
-# Employee Management System
+# Employee Review System
 
-Employee Management System is a web application that allows administrators to manage employees and performance reviews.
+Employee Review System is a web application that allows administrators to manage employees and performance reviews. Employee can review their peers performance.
 
 ## Project Structure
 
 ```
-/employee-management-system
+/EmployeeReviewSystem
 │
-├── config
-│   ├── config.js
-│   └── ...
 ├── controllers
 │   ├── adminController.js
 │   ├── employeeController.js
-│   └── ...
+│   └── authController.js
 ├── models
 │   ├── employee.js
 │   ├── performanceReview.js
-│   └── ...
 ├── public
 │   ├── styles.css
-│   └── ...
 ├── routes
 │   ├── admin.js
 │   ├── auth.js
-│   └── ...
+│   └── employee.js
 ├── views
 │   ├── admin
 │   │   ├── assign-review.ejs
 │   │   ├── dashboard.ejs
-│   │   └── ...
+│   │   └── edit-employee.ejs
+│   │   ├── employees.ejs
+│   │   └── performance-reviews.ejs
+│   │   ├── review-details.ejs
+│   ├── auth
+│   │   ├── login.ejs
+│   │   ├── register.ejs
 │   ├── employee
 │   │   ├── dashboard.ejs
 │   │   ├── performance-reviews.ejs
 │   │   └── ...
-│   └── ...
-├── .gitignore
+├── config.js
 ├── index.js
+├── package-lock.json
 ├── package.json
 ├── README.md
-└── ...
 ```
 
 
@@ -55,14 +55,14 @@ Employee Management System is a web application that allows administrators to ma
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/SumanthFSD/StudentData_Backend.git
-    cd StudentData_Backend
+    git clone https://github.com/SumanthFSD/EmployeeReviewSystem.git
+    cd EmployeeReviewSystem
     ```
 
 2. **Install Dependencies:**
 
     ```bash
-    npm install express ejs mongoose express-session connect-mongo
+    npm install express ejs mongoose express-session body-parser
     ```
 
 3. **Run the Application:**
@@ -80,5 +80,5 @@ Employee Management System is a web application that allows administrators to ma
 
 ## Contributors
 
-- [Sumanth Reddy Gatla](https://github.com/SumanthFSD)
+- [Sumanth Reddy Gatla](https://github.com/EmployeeReviewSystem)
 

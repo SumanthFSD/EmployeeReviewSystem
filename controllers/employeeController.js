@@ -3,7 +3,7 @@ const PerformanceReview = require('../models/performanceReview');
 exports.getDashboard = async (req, res) => {
   try {
     const performanceReviews = await PerformanceReview.find({ reviewer: req.session.userId });
-    console.log("performanceReviews:", performanceReviews);
+    // console.log("performanceReviews:", performanceReviews);
     res.render('employee/dashboard', { performanceReviews });
   } catch (err) {
     console.error(err);

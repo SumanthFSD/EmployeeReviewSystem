@@ -108,7 +108,7 @@ exports.getAssignReview = async (req, res) => {
     
     // Fetch the reviewee (employee to be reviewed)
     const reviewer = await Employee.findById(reviewerId);
-    console.log("reviewerId:", reviewerId, "->", reviewer);
+    // console.log("reviewerId:", reviewerId, "->", reviewer);
 
     // Fetch all employees for the assignment
     const employees = await Employee.find();
@@ -174,23 +174,6 @@ exports.getReviewDetails = async (req, res) => {
 exports.getHomepage = (req, res) => {
   res.render('homepage');
 };
-
-// exports.postAssignReview = async (req, res) => {
-//   const { employeeId, assignedEmployeeId, feedback } = req.body;
-
-//   try {
-//     const newPerformanceReview = new PerformanceReview({
-//       employeeId: assignedEmployeeId,
-//       feedback,
-//     });
-
-//     await newPerformanceReview.save();
-//     res.redirect('/admin/performance-reviews');
-//   } catch (err) {
-//     console.error(err);
-//     res.status(500).send('Internal Server Error');
-//   }
-// };
 
 // Controller function to handle GET request for removing an employee
 exports.getRemoveEmployee = async (req, res) => {
