@@ -4,7 +4,6 @@ Employee Management System is a web application that allows administrators to ma
 
 ## Project Structure
 
-```plaintext
 /employee-management-system
 │
 ├── config
@@ -39,7 +38,7 @@ Employee Management System is a web application that allows administrators to ma
 ├── index.js
 ├── package.json
 ├── README.md
-└── ...```
+└── ...
 
 
 
